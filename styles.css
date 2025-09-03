@@ -1,0 +1,58 @@
+.shopify-detector-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2147483647; /*z-index ensure it's always on top */
+    background: linear-gradient(135deg, #95bf47 0%, #7ba05b 100%);
+    box-shadow: 0 4px 12px rgba(149, 191, 71, 0.3);
+    border-bottom: 2px solid #7ba05b;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+        Ubuntu, Cantarell, sans-serif;
+    animation: slideDown 0.5s ease-out;
+}
+
+.banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner-text {
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.banner-close {
+    position: absolute;
+    right: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+body {
+    margin-top: 0 !important;
+}
+
+.shopify-detector-banner + * {
+    margin-top: 60px !important;
+}
